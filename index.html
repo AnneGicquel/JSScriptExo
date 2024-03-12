@@ -6,13 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+    <!-- largestNumberInTab -->
+    <script>
+        function largestNumberInTab(tab){
+            var max = 0;
+            for (var i = 0; i < tab.length; i++) {
+                if (tab[i] > max) {
+                    max = tab[i];
+                }
+            }
+            return max;
+        }
+
+        var hardTab = [5, 0, 687, 45, 3456];
+        var max = largestNumberInTab(hardTab);
+        console.log(max); 
+    </script>
 </body>
 </html>
 
 <!-- Coder en JS :
     - setUp: html boilerplate, longestWordInSentence.js , largestNumberInTab.js 🆗
-    
-    - script: permettant de retrouver le plus grand nombre d’un tableau (tableau en dur)
+    - script: permettant de retrouver le plus grand nombre d’un tableau (tableau en dur) + suppression du fichier largestNumberInTab.js 🆗
+
     - script (dans un autre fichier): permettant de trouver le mot le plus long d’une phrase. Le tout devant être affiché dans la console. 
-    - intégrer les scripts au fichier html
+    
